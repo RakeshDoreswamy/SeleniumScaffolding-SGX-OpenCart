@@ -9,6 +9,7 @@ import java.net.URL;
 @Config.Sources({
         "file:${user.dir}/src/test/resources/browser-stack.properties"
 })
+//COnfig File
 public interface BrowserStackConfig extends Config {
 
     @Key("username")
