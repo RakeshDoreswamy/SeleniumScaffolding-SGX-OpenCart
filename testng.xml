@@ -2,12 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="com.cbh.listeners.ListenerClass"></listener>
+        <listener class-name="com.sgx.listeners.ListenerClass"></listener>
     </listeners>
-    <test verbose="2" preserve-order="true"
-          name="/Users/amuthansakthivel/IdeaProjects/MasterFramework/src/test/java/com/tmb/tests/web/AddUsersTest.java">
+    <test parallel="methods" thread-count="4" name="SGX - OpenCart Tests">
         <classes>
-            <class name="com.cbh.tests.web.AmazonTest"/>
+            <class name="com.sgx.tests.web.SGXOpenCartRegisterationTest"/>
+            <class name="com.sgx.tests.web.SGXOpenCartLoginTest"/>
+            <class name="com.sgx.tests.web.SGXOpenCartAddToCartTestSamsung"/>
         </classes>
     </test>
 </suite>
